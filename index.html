@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>CheatOX</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .slidecont{
+    padding:0px;
+    margin-top: 50px !important;
+  }
+.searchbox{
+   top:55%;
+   left: 50%;
+   position:absolute;
+  transform: translate(-55%,-60%);
+  z-index:999;
+}
+.lvsrchbox{
+  box-shadow: 5px 0px 40px rgba(0,0,0, 1);
+}
+.fllvsrchbox{
+-webkit-box-shadow: -1px 4px 26px 10px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 4px 26px 10px rgba(0,0,0,0.75);
+box-shadow: -1px 4px 26px 10px rgba(0,0,0,0.75);
+}
+
+.my-carousel{
+position: relative;
+}
+
+.bg-grey {
+      background-color: #3399ff;
+  }
+  .logo-small {
+      color: #3399ff;
+      font-size: 50px;
+  }
+  .smlogo{
+    background-color: #3399ff;
+    color:#fff;
+    border:#3399ff;
+  }
+  .logo {
+      color: #3399ff;
+      font-size: 200px;
+  }
+  .logo-btm{
+     color: #fff;
+      font-size: 200px; 
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+     .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #3399ff;
+  }
+  
+  .carousel-indicators li {
+      border-color: #fff;
+  }
+  .carousel-indicators li.active {
+      background-color: #3399ff;
+  }
+  
+          /* for portfolio section*/
+.carousel-control.crou-right, .carousel-control.crou-left{
+      background-image: none;
+      color: #fff;
+  }
+  .port-indicator li {
+      border-color: #fff;
+  }
+  .port-indicator li.active {
+      background-color: #fff;
+  }
+          /*End here*/
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .butbl{
+  background-color: rgba(0,0,0,0);
+  border-color: #3399ff;
+  color: #3399ff;
+  border-radius: 5px;
+  }
+.butbl:hover{
+  background-color: #3399ff;
+  color:#fff;
+}
+  .panel {
+      border: 1px solid #3399ff; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+
+  .panel-footer .btn:hover {
+      border: 1px solid #3399ff;
+      background-color: #fff !important;
+      color: #3399ff;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #3399ff !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: #fff !important;
+      border-top:1px solid #3399ff;
+      }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #3399ff;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #3399ff;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #3399ff !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      color: #fff;
+  }
+  footer{
+    margin-top: 5%;
+  }
+  .bottom_bar{
+  padding:10px 0px;
+  background:#31698a;
+}
+.contact_info a{
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+}
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 2s;
+      -webkit-animation-duration: 2s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+
+  @media (max-width: 1200px){
+    .onflscr{
+      display: none !important;
+    }
+  }
+  @media (min-width: 1200px){
+    .onsmscr{
+      display: none !important;
+    }
+  }
+  .carousel-inner img {
+      -webkit-filter: grayscale(90%);
+      filter: grayscale(90%); /* make all photos black and white */ 
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+.bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a href="#myPage"><img src="Chtimag\mylogo.png" style="width:130px; height: 50px;" class="img-responsive"/>
+      </a>      
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#team">TEAM</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="onflscr">
+               <!--Searching-->
+<div class="container-fluid searchbox">
+ <div class="row ">
+   <div class="col-sm-12">               
+       <form class="form-inline">
+            <div class="input-group">
+                <input type="text" class="form-control" size="300" placeholder="Search cheats" onkeyup="showResult(this.value)" required>
+                <span class="input-group-addon" style="background-color:#3399ff; color:#fff; border-color: #3399ff"><i class="glyphicon glyphicon-search"></i></span>
+            </div>
+        </form>
+   </div>
+ </div>  
+ <div class="row">
+   <div class="col-sm-12">
+    <div class="fllvsrchbox" style="background-color:rgba(0,0,0, 0.8);" id="livesearch"></div>
+   </div>
+ </div> 
+</div><!--end of search-->
+
+    <!-- slider section-->
+
+
+<div class="row">
+<div id="my_carousel" class="my-carousel carousel slide" data-ride="carousel" data-interval="5000">
+        
+
+    <ol class="carousel-indicators">
+      <li data-target="#my_carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#my_carousel" data-slide-to="1"></li>
+    </ol>
+    
+
+     
+     <div class="carousel-inner">
+        <div class="item active">
+      <img src="Chtimag\pic11.jpg" width="100%"/>
+      <div class="carousel-caption">
+        <h3>Watch Dog</h3>
+        <p>It is always so much fun!</p>
+      </div>
+      
+      </div>
+             
+         <div class="item">
+        <img src="Chtimag\pic6.jpg" width="100%" />
+        <div class="carousel-caption">
+        <h3>Battlefield 4</h3>
+        <p>It is always so much fun!</p>
+      </div>
+
+     </div>
+
+<a class="left carousel-control" href="#my_carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+<a class="right carousel-control" href="#my_carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+
+</div>  
+</div>
+</div>
+ 
+
+
+
+                        <!--On small screen-->
+<div class="onsmscr">
+  
+      <div class="jumbotron text-center">
+          <h1>Cheatox</h1>
+          <p>Find any game cheats here</p>
+          <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+          <form class="form-inline">
+            <div class="input-group">
+              <input type="text" class="form-control" size="50" placeholder="Search game cheats" onkeyup="displayResult(this.value)" required>
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-danger">Search</button>
+              </div>
+           </div>
+          </form>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+              <div class="lvsrchbox" style="background-color:rgba(0,0,0, 0.1);" id="lvsrch"></div>
+            </div>
+            <div class="col-sm-3"></div>
+      </div>
+    </div>      
+</div> 
+
+
+
+              <!-- Container (About Section) -->
+
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2 style="color:#3399ff;">About Cheatox</h2><br>
+      <h4>Cheatox is a website that is set up on 13 september 2018. Cheatox is a website where any user can find cheats of any games. Cheatox is a trusted user friendly website where searching the cheats of any game is very easy.</h4><br>
+      <p >We provide source for game cheats, codes, guides, hints, news, and tips for Playstation 4 (PS4), Xbox One (X1), Wii U, PlayStation 3 (PS3), Xbox 360 (X360), Windows PC, iPhone, Android, and more.</p>
+      <br><a href="#contact" class="mybtn"><button class="btn btn-info btn-lg" style="outline:none;">Get in touch</button></a>
+    </div>
+    <div class="col-sm-4">
+      <span class="fa fa-gamepad logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo-btm slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2 style="color:#fff;">Our Values</h2><br>
+      <h4 style="color:#fff;"><strong style="color:#afeeee;">MISSION:</strong>Cheatox are always a step ahead to help a large number of user, Our mission is to provide a user-friendly experience to all our users.</h4><br>
+      <p style="color:#fff;"><strong style="color:#afeeee;">VISION:</strong>Our vision is to provide the all available game cheats to a large audience who love games and need some tips and helps to complete the missions, so here we are to help those enthusiast to achieve that. We regularly updates about cheats and new games so the user can experience a good gameplay</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>Why this site?</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-user logo-small"></span>
+      <h4>USER-FRIENDLY</h4>
+      <p>A simple and easy to use design..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="   glyphicon glyphicon-open-file logo-small"></span>
+      <h4>UPDATED</h4>
+      <p>We regularly update new games and cheats..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-search logo-small"></span>
+      <h4>EASY SEARCH</h4>
+      <p>Find the best result of your search..</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>Trusted</h4>
+      <p>User can use the site without any worry..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFIED</h4>
+      <p>Cheatox is also certified..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">HARD WORK</h4>
+      <p>We do lot of hard work for our users..</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2 style="color: #fff;">Top Games</h2><br>
+  <h4 style="color: #fff;">Top searched games</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="Chtimag\gta5.jpg" alt="Paris" width="500" height="420">
+        <p><strong>GTA-5</strong></p>
+        <a href="#" class="btn butbl">CheatCodes</a>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="Chtimag\wtchdog.jpg" alt="New York" width="500" height="420">
+        <p><strong>Watchdog</strong></p>
+        <a href="#" class="btn butbl">CheatCodes</a>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="Chtimag\btlfld.jpg" alt="San Francisco" width="500" height="420">
+        <p><strong>Battlefield 4</strong></p>
+        <a href="#" class="btn butbl">CheatCodes</a>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2 style="color: #fff;">What our Users say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators port-indicator">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4 style="color: #fff;">"Good design and very easy searching!"<br><span>Michael Roe, Comment Box</span></h4>
+      </div>
+      <div class="item">
+        <h4 style="color: #fff;">"One word... WOW!!"<br><span>John Doe, Gamer, Rep Inc</span></h4>
+      </div>
+      <div class="item">
+        <h4 style="color: #fff;">"Could I... BE any more happy with this website?"<br><span>Chandler Bing, Streamer, FriendsAlot</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control crou-right" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control crou-left" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Team Section) -->
+<div id="team" class="container-fluid">
+  <div class="text-center">
+    <h2>Our Team</h2>
+    <h4>We are always here for you.</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h2 style="color: #fff;">MIKE EdWARD</h2>
+        </div>
+        <div class="panel-body slideanim">
+          <center><img src="Chtimag\team1.jpg" style="width:250px;height: 250px;" class="img-responsive img-circle"/></center>
+        </div>
+        <div class="panel-footer">
+          <h3>CEO</h3>
+          <button class="btn btn-lg">Contact</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h2 style="color: #fff;">LOUIS WILLIAMS</h2>
+        </div>
+        <div class="panel-body slideanim">
+          <center>
+            <img src="Chtimag\team2.jpeg" style="width:250px;height: 250px;" class="img-responsive img-circle"/>
+          </center>
+        </div>
+        <div class="panel-footer">
+          <h3>COO</h3>
+          <button class="btn btn-lg">Contact</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h2 style="color: #fff;">ALISA JOHNSON</h2>
+        </div>
+        <div class="panel-body slideanim">
+          <center>
+            <img src="Chtimag\team3.jpg" style="width:250px;height: 250px;" class="img-responsive img-circle"/>  </center>
+        </div>
+        <div class="panel-footer">
+          <h3>Manager</h3>
+          <button class="btn btn-lg">Contact</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+
+<footer class="text-center">
+  <a href="#myPage" title="To Top">
+   <button class="btn btn-danger"><span class="glyphicon glyphicon-chevron-up"></span></button>
+  </a>
+</footer>
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center" style="color: #fff;">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p style="color: #fff;">Contact us and we'll get back to you within 24 hours.</p>
+      <p style="color: #fff;"><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p style="color: #fff;"><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p style="color: #fff;"><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link + get touch button
+  $(".navbar a, footer a[href='#myPage'], .mybtn").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 2000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+           <!-- Searching for full screen-->
+
+<script type="text/javascript">
+function showResult(str) {
+  if (str.length==0) { 
+    document.getElementById("livesearch").innerHTML="";
+    document.getElementById("livesearch").style.border="0px";
+    return;
+  }
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("livesearch").innerHTML=this.responseText;
+      document.getElementById("livesearch").style.border="1px solid #000";
+    }
+  }
+  xmlhttp.open("GET","livesearch.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+
+
+           <!-- Searching for small screen-->
+
+<script type="text/javascript">
+function displayResult(str) {
+  if (str.length==0) { 
+    document.getElementById("lvsrch").innerHTML="";
+    document.getElementById("lvsrch").style.border="0px";
+    return;
+  }
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("lvsrch").innerHTML=this.responseText;
+      document.getElementById("lvsrch").style.border="none";
+    }
+  }
+  xmlhttp.open("GET","lvsrch.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+
+</body>
+</html>
