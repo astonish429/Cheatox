@@ -19,6 +19,11 @@
     text-decoration: none;
     color:#000;
   }
+  .alink:active{
+    background-color:#F1F3F4;
+    text-decoration: none;
+    color:#000; 
+  }
 </style>
 </head>
 <body>
@@ -45,12 +50,12 @@ if (strlen($q)>0) {
         if ($hint=="") {
           $hint="<a class='alink' href='" . 
           $z->item(0)->childNodes->item(0)->nodeValue . 
-          "' target='_blank'>" . 
+          "' >" . 
           $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
         } else {
           $hint=$hint . "<br /><a class='alink' href='" . 
           $z->item(0)->childNodes->item(0)->nodeValue . 
-          "' target='_blank'>" . 
+          "' >" . 
           $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
         }
       }

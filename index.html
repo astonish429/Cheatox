@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  
   <title>CheatOX</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +12,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+  body{
+    overflow-x: hidden;
+    }
   body {
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
@@ -65,19 +68,15 @@ position: relative;
 }
 
 .bg-grey {
-      background-color: #3399ff;
+      background-image: linear-gradient(to right, #721C52, #842452, #9B2E52, #B13852, #C44052, #D94A52);
   }
   .logo-small {
-      color: #3399ff;
+      color:#D94A52;
       font-size: 50px;
   }
-  .smlogo{
-    background-color: #3399ff;
-    color:#fff;
-    border:#3399ff;
-  }
+ 
   .logo {
-      color: #3399ff;
+      color: #D94A52;
       font-size: 200px;
   }
   .logo-btm{
@@ -96,14 +95,14 @@ position: relative;
   }
      .carousel-control.right, .carousel-control.left {
       background-image: none;
-      color: #3399ff;
+      color: #fff;
   }
   
   .carousel-indicators li {
       border-color: #fff;
   }
   .carousel-indicators li.active {
-      background-color: #3399ff;
+      background-color: #fff;
   }
   
           /* for portfolio section*/
@@ -130,16 +129,16 @@ position: relative;
   }
   .butbl{
   background-color: rgba(0,0,0,0);
-  border-color: #3399ff;
-  color: #3399ff;
+  border-color: #000;
+  color: #000;
   border-radius: 5px;
   }
 .butbl:hover{
-  background-color: #3399ff;
+  background-color: #000;
   color:#fff;
 }
   .panel {
-      border: 1px solid #3399ff; 
+      border: 1px solid #000; 
       border-radius:0 !important;
       transition: box-shadow 0.5s;
   }
@@ -148,13 +147,13 @@ position: relative;
   }
 
   .panel-footer .btn:hover {
-      border: 1px solid #3399ff;
+      border: 1px solid #000;
       background-color: #fff !important;
-      color: #3399ff;
+      color: #000;
   }
   .panel-heading {
       color: #fff !important;
-      background-color: #3399ff !important;
+      background-color: #000 !important;
       padding: 25px;
       border-bottom: 1px solid transparent;
       border-top-left-radius: 0px;
@@ -164,7 +163,7 @@ position: relative;
   }
   .panel-footer {
       background-color: #fff !important;
-      border-top:1px solid #3399ff;
+      border-top:1px solid #000;
       }
   .panel-footer h3 {
       font-size: 32px;
@@ -175,12 +174,12 @@ position: relative;
   }
   .panel-footer .btn {
       margin: 15px 0;
-      background-color: #3399ff;
+      background-color: #000;
       color: #fff;
   }
   .navbar {
       margin-bottom: 0;
-      background-color: #3399ff;
+     background-image: linear-gradient(to right, #000, #333,  #ccc, #666);
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -193,7 +192,7 @@ position: relative;
       color: #fff !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #3399ff !important;
+      color: #000 !important;
       background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
@@ -271,10 +270,11 @@ position: relative;
     }
   }
   .carousel-inner img {
-      -webkit-filter: grayscale(90%);
+     /* -webkit-filter: grayscale(90%);
       filter: grayscale(90%); /* make all photos black and white */ 
-      width: 100%; /* Set width to 100% */
-      margin: auto;
+      width: 100%; 
+      height:auto; 
+      
   }
   .carousel-caption h3 {
       color: #fff !important;
@@ -305,7 +305,7 @@ position: relative;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a href="#myPage"><img src="Chtimag\mylogo.png" style="width:130px; height: 50px;" class="img-responsive"/>
+      <a href="#myPage"><img src="Chtimag\mylogo.png" style="width:130px; height: 50px;" class="img-fluid">
       </a>      
 
     </div>
@@ -328,7 +328,7 @@ position: relative;
        <form class="form-inline">
             <div class="input-group">
                 <input type="text" class="form-control" size="300" placeholder="Search cheats" onkeyup="showResult(this.value)" required>
-                <span class="input-group-addon" style="background-color:#3399ff; color:#fff; border-color: #3399ff"><i class="glyphicon glyphicon-search"></i></span>
+                <span class="input-group-addon" style="background-color:#000; color:#fff; border-color: #000"><i class="glyphicon glyphicon-search"></i></span>
             </div>
         </form>
    </div>
@@ -356,7 +356,7 @@ position: relative;
      
      <div class="carousel-inner">
         <div class="item active">
-      <img src="Chtimag\pic11.jpg" width="100%"/>
+      <img src="Chtimag\wtchdog.jpg" width="100%"/>
       <div class="carousel-caption">
         <h3>Watch Dog</h3>
         <p>It is always so much fun!</p>
@@ -365,7 +365,7 @@ position: relative;
       </div>
              
          <div class="item">
-        <img src="Chtimag\pic6.jpg" width="100%" />
+        <img src="Chtimag\btlfld.jpg" width="100%" />
         <div class="carousel-caption">
         <h3>Battlefield 4</h3>
         <p>It is always so much fun!</p>
@@ -421,7 +421,7 @@ position: relative;
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
-      <h2 style="color:#3399ff;">About Cheatox</h2><br>
+      <h2 style="color:#000;">About Cheatox</h2><br>
       <h4>Cheatox is a website that is set up on 13 september 2018. Cheatox is a website where any user can find cheats of any games. Cheatox is a trusted user friendly website where searching the cheats of any game is very easy.</h4><br>
       <p >We provide source for game cheats, codes, guides, hints, news, and tips for Playstation 4 (PS4), Xbox One (X1), Wii U, PlayStation 3 (PS3), Xbox 360 (X360), Windows PC, iPhone, Android, and more.</p>
       <br><a href="#contact" class="mybtn"><button class="btn btn-info btn-lg" style="outline:none;">Get in touch</button></a>
@@ -496,21 +496,21 @@ position: relative;
       <div class="thumbnail">
         <img src="Chtimag\gta5.jpg" alt="Paris" width="500" height="420">
         <p><strong>GTA-5</strong></p>
-        <a href="#" class="btn butbl">CheatCodes</a>
+        <a href="gta5.html" class="btn butbl">CheatCodes</a>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
         <img src="Chtimag\wtchdog.jpg" alt="New York" width="500" height="420">
         <p><strong>Watchdog</strong></p>
-        <a href="#" class="btn butbl">CheatCodes</a>
+        <a href="watchdog.html" class="btn butbl">CheatCodes</a>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
         <img src="Chtimag\btlfld.jpg" alt="San Francisco" width="500" height="420">
         <p><strong>Battlefield 4</strong></p>
-        <a href="#" class="btn butbl">CheatCodes</a>
+        <a href="Battlefield4.html" class="btn butbl">CheatCodes</a>
       </div>
     </div>
   </div><br>
@@ -556,7 +556,7 @@ position: relative;
     <h4>We are always here for you.</h4>
   </div>
   <div class="row slideanim">
-    <div class="col-sm-4 col-xs-12">
+    <div class="col-sm-4 col-sm-offset-1 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
           <h2 style="color: #fff;">MIKE EdWARD</h2>
@@ -570,7 +570,7 @@ position: relative;
         </div>
       </div>      
     </div>     
-    <div class="col-sm-4 col-xs-12">
+    <div class="col-sm-4 col-sm-offset-1 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
           <h2 style="color: #fff;">LOUIS WILLIAMS</h2>
@@ -586,7 +586,7 @@ position: relative;
         </div>
       </div>      
     </div>       
-    <div class="col-sm-4 col-xs-12">
+   <!-- <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
           <h2 style="color: #fff;">ALISA JOHNSON</h2>
@@ -600,7 +600,7 @@ position: relative;
           <button class="btn btn-lg">Contact</button>
         </div>
       </div>      
-    </div>    
+    </div> -->   
   </div>
 </div>
 
@@ -616,7 +616,7 @@ position: relative;
   <div class="row">
     <div class="col-sm-5">
       <p style="color: #fff;">Contact us and we'll get back to you within 24 hours.</p>
-      <p style="color: #fff;"><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p style="color: #fff;"><span class="glyphicon glyphicon-map-marker"></span> Delhi, India</p>
       <p style="color: #fff;"><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
       <p style="color: #fff;"><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
     </div>

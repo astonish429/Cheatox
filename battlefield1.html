@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<style>
+body {font-family: Arial;}
+
+
+  .navbar {
+      margin-bottom: 0;
+     background-image: linear-gradient(to right, #000, #333,  #ccc, #666);
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+
+
+.image-div{
+  margin-bottom: 0px;
+}
+.imag{
+  width:100%;
+   max-height: 600px;
+  min-height: 400px;
+}
+/* Style the tab */
+.tab {
+
+    overflow: hidden;
+    border: 1px solid #000;
+    background-color: #000;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    color:#fff;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width:35%;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #fff;
+    color:#D94A52;
+    width: 50%;
+}
+
+/* Create an active/current tablink class */
+.tab button .active {
+    background-color: #D94A52;
+    color:#fff;
+
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+@media(max-width: 600px){
+  .imag{
+    height: 250px;
+  }
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom:5%;
+}
+
+th, td {
+    text-align: left;
+    padding: 15px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #D94A52;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a href="index.html"><img src="Chtimag\mylogo.png" style="width:130px; height: 50px;" class="img-fluid">
+      </a>      
+
+    </div>
+  
+  </div>
+</nav>
+  
+<div class="image-div">
+  <img class="imag" src="chtimag/battlefield1.jpg" style="object-fit: cover; object-position: center center;">
+</div>
+
+<div class="tab">
+  <button class="tablinks active"  onclick="openbox(event, 'Trophy')">Trophies</button>
+  <button class="tablinks"  onclick="openbox(event, 'Player')">Turning Tides</button>
+ 
+  <!--<button class="tablinks"  onclick="openbox(event, 'G&cop')">Gang/Cop Cheats</button>
+  
+  <button class="tablinks"  onclick="openbox(event, 'W&T')">Weather/Time </button>-->
+
+
+
+</div>
+
+
+
+<div id="Player" class="tabcontent">
+  <marquee width="15%" behavior="alternate" direction="left" height="40%"><h4 style="color:red; font-weight: bold;">Cheats &gt; PC</h4></marquee><br/><br/>
+    <table>
+  <tr>
+    <th>Description</th>
+    <th>Cheats</th>
+  </tr>  
+  <tr>
+    <td>Kill 25 enemies with the Lance as Cavalry</td> 
+    <td>  Charged into Battle</td>
+  </tr>
+  <tr>
+    <td>Play a round on all "In the Name of the Tsar" maps</td>
+    <td> Endured the Winter</td>
+  </tr>
+  <tr>
+    <td>Perform a kill with all "In the Name of the Tsar" weapon variants</td>
+    <td>Filled the Stockpile</td>
+  </tr>
+  <tr>
+    <td>Win 5 games of Supply Drop</td>
+    <td> Secured the Resources</td>
+  </tr>
+  <tr>
+    <td>Play all "In the Name of the Tsar" operations</td>
+    <td> The Revolution is Coming</td>
+  </tr>
+  <tr>
+    <td>Kill 4 enemies with the Trench Raider Elite Class</td>
+    <td> French War Hero</td>
+  </tr>
+       <td>Perform one kill with each of the 5 primary Weapon Assignments</td> 
+    <td>  Maitre d'Armes</td>
+  </tr>
+  <tr>
+    <td>Kill 25 enemies with the St Chamond Heavy Tank</td>
+    <td> Saint Chamond Operator</td>
+  </tr>
+  <tr>
+    <td>Kill 4 enemies with the Trench Raider Elite Class</td>
+    <td>Drei Vier Grenadier</td>
+  </tr>
+  <tr>
+    <td>Spend 30 minutes in-game as French Republic Medic</td>
+    <td>French War Hero</td>
+  </tr>
+ 
+</table>
+</div>
+
+
+
+
+
+<div id="Trophy" class="tabcontent">
+  <marquee width="15%" behavior="alternate" direction="left" height="40%"><h4 style="color:red;font-weight: bold;">Cheats &gt; PC</h4></marquee><br/><br/>
+  <table>
+  <tr>
+    <th>Description</th>
+    <th>Cheats</th>
+  </tr>  
+  <tr>
+    <td>Unlock all Codex Entries in Nothing is Written</td> 
+    <td>All men dream</td>
+  </tr>
+  <tr>
+    <td>Reach Assault Rank 2 in multiplayer</td>
+    <td> Assault Enlistment</td>
+  </tr>
+  <tr>
+    <td>Complete Avanti Savoia!</td>
+    <td> Avanti Savoia!</td>
+  </tr>
+  <tr>
+    <td>Collect one Field Manual in the campaign</td>
+    <td>Catching up on some reading</td>
+  </tr>
+  <tr>
+    <td>Unlock all Codex Entries in Avanti Savoia!</td>
+    <td>Conquering the mountains</td>
+  </tr>
+  <tr>
+    <td>Reach Rank 10 in multiplayer</td>
+    <td> Corporal</td>
+  </tr>
+  <tr>
+    <td>Collect all Field Manuals in the campaign</td>
+    <td> Enough for a library</td>
+  </tr>
+
+</table>
+</div>
+                       <!--second div-->
+
+
+
+<script>
+function openbox(evt, boxName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(boxName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+</body>
+</html> 

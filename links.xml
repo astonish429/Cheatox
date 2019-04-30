@@ -2,31 +2,24 @@
 
 <pages>
   <link>
-    <title>about</title>
-    <url>about.html</url>
+    <title>GTA San Andreas</title>
+    <url>gta san andreas.html</url>
+  </link>
+   <link>
+    <title>Battlefield 1</title>
+    <url>battlefield1.html</url>
   </link>
   <link>
-    <title>HTML a tag</title>
-    <url>https://www.w3schools.com/tags/tag_a.asp</url>
+    <title>GTA V</title>
+    <url>gta5.html</url>
   </link>
   <link>
-    <title>HTML br tag</title>
-    <url>https://www.w3schools.com/tags/tag_br.asp</url>
+    <title>Battlefield 4</title>
+    <url>battlefield4.html</url>
   </link>
   <link>
-    <title>CSS background Property</title>
-    <url>https://www.w3schools.com/cssref/css3_pr_background.asp</url>
+    <title>WatchDog</title>
+    <url>watchdog.html</url>
   </link>
-  <link>
-    <title>CSS border Property</title>
-    <url>https://www.w3schools.com/cssref/pr_border.asp</url>
-  </link>
-  <link>
-    <title>JavaScript Date Object</title>
-    <url>https://www.w3schools.com/jsref/jsref_obj_date.asp</url>
-  </link>
-  <link>
-    <title>JavaScript Array Object</title>
-    <url>https://www.w3schools.com/jsref/jsref_obj_array.asp</url>
-  </link>
+ 
 </pages>
